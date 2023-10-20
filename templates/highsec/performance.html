@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block title %}HIGHSEC 2023 | MSM Malappuram East{% endblock %}
+{% load i18n static %}{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="col-xl-6 col-lg-6 col-md-8 col-11 mx-auto">
+    <div class="auth-form-light py-5 px-4 px-sm-5">
+        <div class="brand-logo text-center">
+            <img src="{% static 'app/images/logo-dark.png' %}" alt="logo" />
+        </div>
+
+        <ul class="nav nav-pills mb-3 border-0 justify-content-end" id="pills-tab" role="tablist">
+
+            <li class="nav-item" role="presentation">
+                <button class="btn-sm nav-link active" id="pills-graph-tab" data-toggle="pill"
+                    data-target="#pills-graph" type="button" role="tab" aria-controls="pills-graph"
+                    aria-selected="true"> Graph
+                </button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="btn-sm nav-link" id="pills-table-tab" data-toggle="pill" data-target="#pills-table"
+                    type="button" role="tab" aria-controls="pills-table" aria-selected="false"> Table
+                </button>
+            </li>
+
+        </ul>
+
+        <div class="tab-content border-0 p-0" id="pills-tabContent">
+
+            <div class="tab-pane fade show active" id="pills-graph" role="tabpanel" aria-labelledby="pills-graph-tab">
+                <div id="chart"></div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-table" role="tabpanel" aria-labelledby="pills-table-tab">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Zone</th>
+                                <th>Registered</th>
+                                <th>Target</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in data %}
+                            <tr>
+                                <td class="py-2">{{ i.zone }}</td>
+                                <td class="py-2">{{ i.registered }}</td>
+                                <td class="py-2">{{ i.target }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %} {% block plugins %}
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+{% endblock %}
+
+{% block javascript %}
+<script>
+    const series = {{ performance_data| safe}};
+    const zone_labels = {{ zone_labels | safe }};
+
+    var options = {
+        series: [{ data: series }],
+        chart: { type: 'bar', height: 600, toolbar: { show: true } },
+        plotOptions: { bar: { borderRadius: 4, horizontal: true } },
+        dataLabels: { enabled: false },
+        xaxis: { categories: zone_labels },
+        tooltip: {
+            y: {
+                formatter: function (value) {
+                    return "Performance: " + value + "%";
+                }
+            }
+        },
+        yaxis: { max: 100 }
+    };
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+</script>
+{% endblock %} {% block stylesheet %}
+<style>
+    .content-wrapper {
+        background-image: url({% static "web/img/banner.webp" %});
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .auth .auth-form-light {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+{% endblock %} ```

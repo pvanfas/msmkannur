@@ -1,0 +1,36 @@
+.help {
+    font-size: 11px;
+    color: #6495ed;
+}
+
+.stretch-card .card {
+    position: relative;
+}
+
+.card-label {
+    display: block;
+    padding: 2px 5px;
+    font-size: 13px;
+    border-radius: 13px;
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    color: #fff;
+    background: red;
+    z-index: 1;
+}
+
+.thumb {
+    display: block;
+    border-radius: 3px;
+
+}
+
+.thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+    overflow: hidden;
+}

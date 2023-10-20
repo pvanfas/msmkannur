@@ -1,0 +1,3184 @@
+[
+    {
+        "model": "admin_interface.theme",
+        "pk": 1,
+        "fields": {
+            "name": "Django",
+            "active": true,
+            "title": "MSM Kannur Administration",
+            "title_color": "#F5DD5D",
+            "title_visible": true,
+            "logo": "",
+            "logo_color": "#FFFFFF",
+            "logo_max_width": 400,
+            "logo_max_height": 100,
+            "logo_visible": false,
+            "favicon": "",
+            "env_name": "",
+            "env_color": "#E74C3C",
+            "env_visible_in_header": true,
+            "env_visible_in_favicon": true,
+            "language_chooser_active": true,
+            "language_chooser_control": "default-select",
+            "language_chooser_display": "code",
+            "css_header_background_color": "#0C4B33",
+            "css_header_text_color": "#44B78B",
+            "css_header_link_color": "#FFFFFF",
+            "css_header_link_hover_color": "#C9F0DD",
+            "css_module_background_color": "#44B78B",
+            "css_module_background_selected_color": "#FFFFCC",
+            "css_module_text_color": "#FFFFFF",
+            "css_module_link_color": "#FFFFFF",
+            "css_module_link_selected_color": "#FFFFFF",
+            "css_module_link_hover_color": "#C9F0DD",
+            "css_module_rounded_corners": true,
+            "css_generic_link_color": "#0C3C26",
+            "css_generic_link_hover_color": "#156641",
+            "css_generic_link_active_color": "#29B864",
+            "css_save_button_background_color": "#0C4B33",
+            "css_save_button_background_hover_color": "#0C3C26",
+            "css_save_button_text_color": "#FFFFFF",
+            "css_delete_button_background_color": "#BA2121",
+            "css_delete_button_background_hover_color": "#A41515",
+            "css_delete_button_text_color": "#FFFFFF",
+            "related_modal_active": true,
+            "related_modal_background_color": "#000000",
+            "related_modal_background_opacity": "0.3",
+            "related_modal_rounded_corners": true,
+            "related_modal_close_button_visible": true,
+            "list_filter_highlight": true,
+            "list_filter_dropdown": true,
+            "list_filter_sticky": true,
+            "list_filter_removal_links": false,
+            "foldable_apps": true,
+            "show_fieldsets_as_tabs": false,
+            "show_inlines_as_tabs": true,
+            "collapsible_stacked_inlines": false,
+            "collapsible_stacked_inlines_collapsed": true,
+            "collapsible_tabular_inlines": false,
+            "collapsible_tabular_inlines_collapsed": true,
+            "recent_actions_visible": true,
+            "form_submit_sticky": false,
+            "form_pagination_sticky": false
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$TN9Eu50q71kwA1r6Yas2lN$AxC4Jx1++sCl/zp8eWHart2VxmbQwkhHY5E3KBPP9ho=",
+            "last_login": "2023-10-20T01:48:52.555Z",
+            "is_superuser": true,
+            "username": "msmkannur",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2023-10-20T01:48:32.498Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "00e6ba85-9345-4178-86c0-7115b55544c2",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.891Z",
+            "date_updated": "2023-10-20T01:51:23.891Z",
+            "is_active": true,
+            "name": "Vanuatu",
+            "slug": "vanuatu",
+            "code": "+678",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Vanuatu.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "020663a6-d38d-4b7a-8501-3924f88e522d",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.685Z",
+            "date_updated": "2023-10-20T01:51:23.685Z",
+            "is_active": true,
+            "name": "China",
+            "slug": "china",
+            "code": "+86",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "0296601e-557f-4d3c-b448-e08d9f603ac2",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.705Z",
+            "date_updated": "2023-10-20T01:51:23.705Z",
+            "is_active": true,
+            "name": "Egypt",
+            "slug": "egypt",
+            "code": "+20",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "0515f63a-cd22-4184-9a3b-7926e0e56b73",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.802Z",
+            "date_updated": "2023-10-20T01:51:23.802Z",
+            "is_active": true,
+            "name": "Nauru",
+            "slug": "nauru",
+            "code": "+674",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Nauru.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "068b9043-82a0-48ae-809f-b1d919435f60",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.747Z",
+            "date_updated": "2023-10-20T01:51:23.747Z",
+            "is_active": true,
+            "name": "Iceland",
+            "slug": "iceland",
+            "code": "+354",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "078a6293-6f56-4b5c-b165-df08f8e03c82",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.848Z",
+            "date_updated": "2023-10-20T01:51:23.848Z",
+            "is_active": true,
+            "name": "Sierra Leone",
+            "slug": "sierra-leone",
+            "code": "+232",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Sierra_Leone.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "09abc0ae-1267-4a35-bc94-4f1ee07a8b6b",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.657Z",
+            "date_updated": "2023-10-20T01:51:23.657Z",
+            "is_active": true,
+            "name": "Barbados",
+            "slug": "barbados",
+            "code": "+1 246",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Barbados.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "0a6754fa-698d-44d9-ba82-953c8e7da261",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.774Z",
+            "date_updated": "2023-10-20T01:51:23.774Z",
+            "is_active": true,
+            "name": "Liechtenstein",
+            "slug": "liechtenstein",
+            "code": "+423",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_Liechtenstein.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "0a92791e-f644-41cc-8821-f4e96ca5d929",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.708Z",
+            "date_updated": "2023-10-20T01:51:23.708Z",
+            "is_active": true,
+            "name": "Equatorial Guinea",
+            "slug": "equatorial-guinea",
+            "code": "+240",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Equatorial_Guinea.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "0bc2cabe-2892-47af-ba28-b2097335411f",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.868Z",
+            "date_updated": "2023-10-20T01:51:23.868Z",
+            "is_active": true,
+            "name": "Tajikistan",
+            "slug": "tajikistan",
+            "code": "+992",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Tajikistan.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "0bf73f2d-22ae-49d3-bc59-ffe6a4d99782",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.815Z",
+            "date_updated": "2023-10-20T01:51:23.815Z",
+            "is_active": true,
+            "name": "Norway",
+            "slug": "norway",
+            "code": "+47",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "109c2f0d-b79f-4b14-8f55-83a5ae322ab2",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.806Z",
+            "date_updated": "2023-10-20T01:51:23.806Z",
+            "is_active": true,
+            "name": "New Caledonia",
+            "slug": "new-caledonia",
+            "code": "+687",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/2/23/Flag_of_New_Caledonia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "11bdd577-a818-492b-af08-3ddc1d0d1a52",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.670Z",
+            "date_updated": "2023-10-20T01:51:23.670Z",
+            "is_active": true,
+            "name": "British Indian Ocean Territory",
+            "slug": "british-indian-ocean-territory",
+            "code": "+246",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_the_Commissioner_of_the_British_Indian_Ocean_Territory.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "13e6a2b9-b709-4019-8380-62671e8dd210",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.699Z",
+            "date_updated": "2023-10-20T01:51:23.699Z",
+            "is_active": true,
+            "name": "Denmark",
+            "slug": "denmark",
+            "code": "+45",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "159ab7b3-484e-413c-bab5-e3de8f7f4531",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.791Z",
+            "date_updated": "2023-10-20T01:51:23.792Z",
+            "is_active": true,
+            "name": "Mexico",
+            "slug": "mexico",
+            "code": "+52",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "16248060-8ce2-4de8-a970-570a60fc9b39",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.675Z",
+            "date_updated": "2023-10-20T01:51:23.675Z",
+            "is_active": true,
+            "name": "Burundi",
+            "slug": "burundi",
+            "code": "+257",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Burundi.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "162bc45c-2d87-46c5-9941-b6fb2aeba6b9",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.778Z",
+            "date_updated": "2023-10-20T01:51:23.778Z",
+            "is_active": true,
+            "name": "Madagascar",
+            "slug": "madagascar",
+            "code": "+261",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "167e331f-6eaa-457e-8392-762359974ab2",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.676Z",
+            "date_updated": "2023-10-20T01:51:23.676Z",
+            "is_active": true,
+            "name": "Cambodia",
+            "slug": "cambodia",
+            "code": "+855",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "16957048-66a0-4790-b8c0-b17cfb751927",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.894Z",
+            "date_updated": "2023-10-20T01:51:23.894Z",
+            "is_active": true,
+            "name": "Wallis and Futuna",
+            "slug": "wallis-and-futuna",
+            "code": "+681",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Wallis_and_Futuna.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "187c6f36-0b98-4cca-a6a4-e70beaaf4590",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.770Z",
+            "date_updated": "2023-10-20T01:51:23.770Z",
+            "is_active": true,
+            "name": "Lebanon",
+            "slug": "lebanon",
+            "code": "+961",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Lebanon.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "18f9bc23-1484-418f-9edd-92d7c46ede49",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.882Z",
+            "date_updated": "2023-10-20T01:51:23.882Z",
+            "is_active": true,
+            "name": "Uganda",
+            "slug": "uganda",
+            "code": "+256",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Uganda.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "194dab1e-e0a7-4852-b0b1-5cbb6954be4e",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.645Z",
+            "date_updated": "2023-10-20T01:51:23.645Z",
+            "is_active": true,
+            "name": "Anguilla",
+            "slug": "anguilla",
+            "code": "+1 264",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Anguilla.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "1a3a12c1-ed0c-4f8b-8d56-ab8ed8571de9",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.897Z",
+            "date_updated": "2023-10-20T01:51:23.897Z",
+            "is_active": true,
+            "name": "Zimbabwe",
+            "slug": "zimbabwe",
+            "code": "+263",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Zimbabwe.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "1b3722da-09ce-433e-9440-85507a6dc47d",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.808Z",
+            "date_updated": "2023-10-20T01:51:23.808Z",
+            "is_active": true,
+            "name": "Nicaragua",
+            "slug": "nicaragua",
+            "code": "+505",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Nicaragua.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "1c465e94-e5e1-4ab8-a196-ed1692d426d3",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.748Z",
+            "date_updated": "2023-10-20T01:51:23.748Z",
+            "is_active": true,
+            "name": "India",
+            "slug": "india",
+            "code": "+91",
+            "flag": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "1c4b7260-779f-4679-8b17-3aafe5e6f85b",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.818Z",
+            "date_updated": "2023-10-20T01:51:23.818Z",
+            "is_active": true,
+            "name": "Palau",
+            "slug": "palau",
+            "code": "+680",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Palau.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "1c72c7cb-624d-4561-bfba-f1583210b673",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.712Z",
+            "date_updated": "2023-10-20T01:51:23.712Z",
+            "is_active": true,
+            "name": "Falkland Islands (Malvinas)",
+            "slug": "falkland-islands-malvinas",
+            "code": "+500",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_Falkland_Islands.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "1d232774-8228-4149-a2ea-2d8f3df9e370",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.677Z",
+            "date_updated": "2023-10-20T01:51:23.677Z",
+            "is_active": true,
+            "name": "Cameroon",
+            "slug": "cameroon",
+            "code": "+237",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Cameroon.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "1fe63cd2-9003-4903-a115-e83ac2e4281d",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.773Z",
+            "date_updated": "2023-10-20T01:51:23.773Z",
+            "is_active": true,
+            "name": "Liberia",
+            "slug": "liberia",
+            "code": "+231",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Liberia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "20f75198-3986-44e4-b933-592c7c06cb29",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.767Z",
+            "date_updated": "2023-10-20T01:51:23.767Z",
+            "is_active": true,
+            "name": "Kyrgyzstan",
+            "slug": "kyrgyzstan",
+            "code": "+996",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Flag_of_Kyrgyzstan.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "214cc4a8-c868-4a07-a4f6-503fcb17c88c",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.847Z",
+            "date_updated": "2023-10-20T01:51:23.847Z",
+            "is_active": true,
+            "name": "Seychelles",
+            "slug": "seychelles",
+            "code": "+248",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Seychelles.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "21574b58-7fd9-4f35-a683-534e8c5e3ef0",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.866Z",
+            "date_updated": "2023-10-20T01:51:23.866Z",
+            "is_active": true,
+            "name": "Taiwan",
+            "slug": "taiwan",
+            "code": "+886",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_the_Republic_of_China.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "21ae62ee-e482-449e-97cf-3f1c2ce2605e",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.829Z",
+            "date_updated": "2023-10-20T01:51:23.829Z",
+            "is_active": true,
+            "name": "Puerto Rico",
+            "slug": "puerto-rico",
+            "code": "+1 939",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_Puerto_Rico.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "226f2559-8345-49aa-880a-79ca72b092fb",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.745Z",
+            "date_updated": "2023-10-20T01:51:23.745Z",
+            "is_active": true,
+            "name": "Hungary",
+            "slug": "hungary",
+            "code": "+36",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "236bb728-c4b0-47a1-bc31-39212691087a",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.673Z",
+            "date_updated": "2023-10-20T01:51:23.673Z",
+            "is_active": true,
+            "name": "Bulgaria",
+            "slug": "bulgaria",
+            "code": "+359",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "239bcc58-8247-45eb-8984-05d8516fce4b",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.674Z",
+            "date_updated": "2023-10-20T01:51:23.674Z",
+            "is_active": true,
+            "name": "Burkina Faso",
+            "slug": "burkina-faso",
+            "code": "+226",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Burkina_Faso.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "2473c939-3366-446d-97d4-60d0cc0b328b",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.649Z",
+            "date_updated": "2023-10-20T01:51:23.649Z",
+            "is_active": true,
+            "name": "Aruba",
+            "slug": "aruba",
+            "code": "+297",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Aruba.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "258d84db-874e-4dd7-ab0d-a1f02614db2b",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.735Z",
+            "date_updated": "2023-10-20T01:51:23.735Z",
+            "is_active": true,
+            "name": "Guernsey",
+            "slug": "guernsey",
+            "code": "+44",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Guernsey.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "25e74303-1fad-4264-8192-034823fb8d1f",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.886Z",
+            "date_updated": "2023-10-20T01:51:23.886Z",
+            "is_active": true,
+            "name": "United States",
+            "slug": "united-states",
+            "code": "+1",
+            "flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "28d5cc9d-131a-4a7b-99be-7598a04cbe4b",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.731Z",
+            "date_updated": "2023-10-20T01:51:23.731Z",
+            "is_active": true,
+            "name": "Guadeloupe",
+            "slug": "guadeloupe",
+            "code": "+590",
+            "flag": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "296cfc06-5154-48af-a9b0-b4a47a783fe5",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.830Z",
+            "date_updated": "2023-10-20T01:51:23.830Z",
+            "is_active": true,
+            "name": "Qatar",
+            "slug": "qatar",
+            "code": "+974",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "2bfae942-793f-4c08-bb38-46eff772d2fd",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.843Z",
+            "date_updated": "2023-10-20T01:51:23.843Z",
+            "is_active": true,
+            "name": "Saudi Arabia",
+            "slug": "saudi-arabia",
+            "code": "+966",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "2c3e04b9-3f7c-4565-b151-c6d6312f4d1d",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.639Z",
+            "date_updated": "2023-10-20T01:51:23.639Z",
+            "is_active": true,
+            "name": "Afghanistan",
+            "slug": "afghanistan",
+            "code": "+93",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "2d4a391b-3868-43f5-bf97-8ce3c9918d3d",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.842Z",
+            "date_updated": "2023-10-20T01:51:23.842Z",
+            "is_active": true,
+            "name": "Sao Tome and Principe",
+            "slug": "sao-tome-and-principe",
+            "code": "+239",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Sao_Tome_and_Principe.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "2f76a574-fbce-4be5-bbf5-82b2f7d57d23",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.765Z",
+            "date_updated": "2023-10-20T01:51:23.765Z",
+            "is_active": true,
+            "name": "Kuwait",
+            "slug": "kuwait",
+            "code": "+965",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Kuwait.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "2ffc22dd-3aee-4848-8b27-885229ae3745",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.743Z",
+            "date_updated": "2023-10-20T01:51:23.743Z",
+            "is_active": true,
+            "name": "Honduras",
+            "slug": "honduras",
+            "code": "+504",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "31daeea2-27f3-47b2-9f02-f8caee0657bc",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.881Z",
+            "date_updated": "2023-10-20T01:51:23.881Z",
+            "is_active": true,
+            "name": "Tuvalu",
+            "slug": "tuvalu",
+            "code": "+688",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tuvalu.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "33d23b21-7925-49ac-a6e4-7406df7d31c0",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.749Z",
+            "date_updated": "2023-10-20T01:51:23.749Z",
+            "is_active": true,
+            "name": "Indonesia",
+            "slug": "indonesia",
+            "code": "+62",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "33d476b0-4390-4490-bee2-e13da302e51e",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.827Z",
+            "date_updated": "2023-10-20T01:51:23.827Z",
+            "is_active": true,
+            "name": "Poland",
+            "slug": "poland",
+            "code": "+48",
+            "flag": "https://upload.wikimedia.org/wikipedia/en/1/12/Flag_of_Poland.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "33fbc596-8cfd-4c47-bffd-93b4bf2af6a1",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.810Z",
+            "date_updated": "2023-10-20T01:51:23.810Z",
+            "is_active": true,
+            "name": "Nigeria",
+            "slug": "nigeria",
+            "code": "+234",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "3483c622-0b15-4374-823d-da80b8efba2a",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.694Z",
+            "date_updated": "2023-10-20T01:51:23.694Z",
+            "is_active": true,
+            "name": "Costa Rica",
+            "slug": "costa-rica",
+            "code": "+506",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Costa_Rica_%28state%29.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "34fafb64-4a89-4829-9e89-e9723f544800",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.873Z",
+            "date_updated": "2023-10-20T01:51:23.873Z",
+            "is_active": true,
+            "name": "Tokelau",
+            "slug": "tokelau",
+            "code": "+690",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Tokelau.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "3602799c-6164-4404-94bc-1403fdb90959",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.769Z",
+            "date_updated": "2023-10-20T01:51:23.769Z",
+            "is_active": true,
+            "name": "Latvia",
+            "slug": "latvia",
+            "code": "+371",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Latvia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "363b1033-3dcd-41a7-ae0c-2b369aa2e6a7",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.877Z",
+            "date_updated": "2023-10-20T01:51:23.877Z",
+            "is_active": true,
+            "name": "Turkey",
+            "slug": "turkey",
+            "code": "+90",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "3763a779-2f60-4ff0-9731-602a2d82cc76",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.864Z",
+            "date_updated": "2023-10-20T01:51:23.864Z",
+            "is_active": true,
+            "name": "Switzerland",
+            "slug": "switzerland",
+            "code": "+41",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Switzerland_%28Pantone%29.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "378ef2fe-0b26-4518-b14c-c2271c415baa",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.874Z",
+            "date_updated": "2023-10-20T01:51:23.874Z",
+            "is_active": true,
+            "name": "Tonga",
+            "slug": "tonga",
+            "code": "+676",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Tonga.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "37e6ec11-98b3-4c03-8f13-f09069d2f920",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.794Z",
+            "date_updated": "2023-10-20T01:51:23.794Z",
+            "is_active": true,
+            "name": "Mongolia",
+            "slug": "mongolia",
+            "code": "+976",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Mongolia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "385b4ea1-5b93-40db-b3d9-5950c61864e9",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.756Z",
+            "date_updated": "2023-10-20T01:51:23.756Z",
+            "is_active": true,
+            "name": "Italy",
+            "slug": "italy",
+            "code": "+39",
+            "flag": "https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "386c2d41-fcb0-448b-9925-2cedc3e2d623",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.781Z",
+            "date_updated": "2023-10-20T01:51:23.781Z",
+            "is_active": true,
+            "name": "Malaysia",
+            "slug": "malaysia",
+            "code": "+60",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "39309ce1-9bb3-416d-a753-0e94a6b11771",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.755Z",
+            "date_updated": "2023-10-20T01:51:23.755Z",
+            "is_active": true,
+            "name": "Israel",
+            "slug": "israel",
+            "code": "+972",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "39440426-e9dc-4bcd-ae9c-e3fea0fc0730",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.696Z",
+            "date_updated": "2023-10-20T01:51:23.696Z",
+            "is_active": true,
+            "name": "Cuba",
+            "slug": "cuba",
+            "code": "+53",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Cuba.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "3952c65d-ff0a-4bcb-9356-4d2f81049980",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.852Z",
+            "date_updated": "2023-10-20T01:51:23.852Z",
+            "is_active": true,
+            "name": "Solomon Islands",
+            "slug": "solomon-islands",
+            "code": "+677",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Solomon_Islands.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "3ac6c7a6-0a56-467e-994f-3a3f1e81f183",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.870Z",
+            "date_updated": "2023-10-20T01:51:23.870Z",
+            "is_active": true,
+            "name": "Timor-Leste",
+            "slug": "timor-leste",
+            "code": "+670",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "3d1beef5-0e40-4ef8-ba16-7bdb87f13e1a",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.716Z",
+            "date_updated": "2023-10-20T01:51:23.716Z",
+            "is_active": true,
+            "name": "Finland",
+            "slug": "finland",
+            "code": "+358",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "3d3545cd-0c60-4724-ab98-2b921a51b030",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.648Z",
+            "date_updated": "2023-10-20T01:51:23.648Z",
+            "is_active": true,
+            "name": "Armenia",
+            "slug": "armenia",
+            "code": "+374",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Armenia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "3d55cbfe-3ead-4a72-a5e4-f62a26234cba",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.726Z",
+            "date_updated": "2023-10-20T01:51:23.727Z",
+            "is_active": true,
+            "name": "Gibraltar",
+            "slug": "gibraltar",
+            "code": "+350",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/0/02/Flag_of_Gibraltar.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "3e54d6bb-0b29-41ec-8d7f-fecc748eb28f",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.729Z",
+            "date_updated": "2023-10-20T01:51:23.729Z",
+            "is_active": true,
+            "name": "Greenland",
+            "slug": "greenland",
+            "code": "+299",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_Greenland.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "3f517e8d-4523-42c0-b1ec-6de88fd8ef17",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.841Z",
+            "date_updated": "2023-10-20T01:51:23.841Z",
+            "is_active": true,
+            "name": "San Marino",
+            "slug": "san-marino",
+            "code": "+378",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_San_Marino.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "3f648ecd-3c94-4b2a-a51a-ed2a8ca8c42e",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.804Z",
+            "date_updated": "2023-10-20T01:51:23.804Z",
+            "is_active": true,
+            "name": "Netherlands",
+            "slug": "netherlands",
+            "code": "+31",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "3f918980-6037-49d8-848c-b8254890337f",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.702Z",
+            "date_updated": "2023-10-20T01:51:23.702Z",
+            "is_active": true,
+            "name": "Dominica",
+            "slug": "dominica",
+            "code": "+1 767",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Flag_of_Dominica.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "40143d52-f844-498f-a428-bf69efbb2d98",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.667Z",
+            "date_updated": "2023-10-20T01:51:23.667Z",
+            "is_active": true,
+            "name": "Botswana",
+            "slug": "botswana",
+            "code": "+267",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Botswana.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "4023c8a6-de01-4c5d-9e27-6ee6ab8fc54c",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.704Z",
+            "date_updated": "2023-10-20T01:51:23.704Z",
+            "is_active": true,
+            "name": "Ecuador",
+            "slug": "ecuador",
+            "code": "+593",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "415c3920-0f8b-43ec-a3b8-1f8924155cb0",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.695Z",
+            "date_updated": "2023-10-20T01:51:23.695Z",
+            "is_active": true,
+            "name": "Croatia",
+            "slug": "croatia",
+            "code": "+385",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "41d3110a-53d3-493f-a572-3e3d099fe3c2",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.662Z",
+            "date_updated": "2023-10-20T01:51:23.662Z",
+            "is_active": true,
+            "name": "Benin",
+            "slug": "benin",
+            "code": "+229",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Benin.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "41f7df6e-eccb-4eaf-a2b6-9c27cab00e63",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.785Z",
+            "date_updated": "2023-10-20T01:51:23.785Z",
+            "is_active": true,
+            "name": "Marshall Islands",
+            "slug": "marshall-islands",
+            "code": "+692",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_the_Marshall_Islands.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "431c2457-52c4-455e-8844-76a301e8f0ff",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.817Z",
+            "date_updated": "2023-10-20T01:51:23.817Z",
+            "is_active": true,
+            "name": "Pakistan",
+            "slug": "pakistan",
+            "code": "+92",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "4379f9cf-58c2-4b26-9be5-baab7767386f",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.751Z",
+            "date_updated": "2023-10-20T01:51:23.751Z",
+            "is_active": true,
+            "name": "Iraq",
+            "slug": "iraq",
+            "code": "+964",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Iraq.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "4461c9db-5347-45dd-b237-9bfa4b7e6174",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.834Z",
+            "date_updated": "2023-10-20T01:51:23.834Z",
+            "is_active": true,
+            "name": "Réunion",
+            "slug": "runion",
+            "code": "+262",
+            "flag": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "4716e3f6-9aed-48a6-98dc-5f0c9c49c208",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.883Z",
+            "date_updated": "2023-10-20T01:51:23.883Z",
+            "is_active": true,
+            "name": "Ukraine",
+            "slug": "ukraine",
+            "code": "+380",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "47631149-8677-481d-9226-60efea5f519b",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.652Z",
+            "date_updated": "2023-10-20T01:51:23.652Z",
+            "is_active": true,
+            "name": "Austria",
+            "slug": "austria",
+            "code": "+43",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "485c2763-e9fb-4096-a004-fe9fec8d442a",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.879Z",
+            "date_updated": "2023-10-20T01:51:23.879Z",
+            "is_active": true,
+            "name": "Turks and Caicos Islands",
+            "slug": "turks-and-caicos-islands",
+            "code": "+1 649",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "4a6ddb96-61f4-411e-a204-5f961537ccb0",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.693Z",
+            "date_updated": "2023-10-20T01:51:23.693Z",
+            "is_active": true,
+            "name": "Cook Islands",
+            "slug": "cook-islands",
+            "code": "+682",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_the_Cook_Islands.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "4b16ad82-2ae6-4dca-b685-23d66bc05cd4",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.822Z",
+            "date_updated": "2023-10-20T01:51:23.822Z",
+            "is_active": true,
+            "name": "Paraguay",
+            "slug": "paraguay",
+            "code": "+595",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "4cb66432-23ce-4a27-85fe-0d37e2eccd98",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.724Z",
+            "date_updated": "2023-10-20T01:51:23.724Z",
+            "is_active": true,
+            "name": "Germany",
+            "slug": "germany",
+            "code": "+49",
+            "flag": "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "4de3c554-f0a7-46c9-aa58-8ee0012d50f3",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.692Z",
+            "date_updated": "2023-10-20T01:51:23.692Z",
+            "is_active": true,
+            "name": "Congo",
+            "slug": "congo",
+            "code": "+242",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "4ec42f92-67d4-4894-9c61-f8ba300105ea",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.850Z",
+            "date_updated": "2023-10-20T01:51:23.850Z",
+            "is_active": true,
+            "name": "Slovakia",
+            "slug": "slovakia",
+            "code": "+421",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "4f2dc1b5-734e-4c79-9022-2ea9c786dcbb",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.703Z",
+            "date_updated": "2023-10-20T01:51:23.703Z",
+            "is_active": true,
+            "name": "Dominican Republic",
+            "slug": "dominican-republic",
+            "code": "+1 849",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "501623c6-7037-41af-b023-3582cf3f610e",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.738Z",
+            "date_updated": "2023-10-20T01:51:23.738Z",
+            "is_active": true,
+            "name": "Guyana",
+            "slug": "guyana",
+            "code": "+592",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Guyana.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "526cb7d8-4789-45c5-bdc5-2bb064ae8ad0",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.717Z",
+            "date_updated": "2023-10-20T01:51:23.717Z",
+            "is_active": true,
+            "name": "France",
+            "slug": "france",
+            "code": "+33",
+            "flag": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "52c50186-a5c0-465b-933d-eca2e988e0d8",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.741Z",
+            "date_updated": "2023-10-20T01:51:23.741Z",
+            "is_active": true,
+            "name": "Heard Island and McDonald Islands",
+            "slug": "heard-island-and-mcdonald-islands",
+            "code": "+672",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Antarctica.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "539f2e66-c7a6-4846-93a3-045f987a4bac",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.855Z",
+            "date_updated": "2023-10-20T01:51:23.855Z",
+            "is_active": true,
+            "name": "South Africa",
+            "slug": "south-africa",
+            "code": "+27",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "558ebaa7-c3ce-4cac-94f4-b51629078b93",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.776Z",
+            "date_updated": "2023-10-20T01:51:23.776Z",
+            "is_active": true,
+            "name": "Luxembourg",
+            "slug": "luxembourg",
+            "code": "+352",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Luxembourg.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "56fa0d5d-647d-4a42-ad54-46fdf6c4223b",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.809Z",
+            "date_updated": "2023-10-20T01:51:23.809Z",
+            "is_active": true,
+            "name": "Niger",
+            "slug": "niger",
+            "code": "+227",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_Niger.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "5821aed3-18ed-4220-95fe-9bc992fd825a",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.888Z",
+            "date_updated": "2023-10-20T01:51:23.888Z",
+            "is_active": true,
+            "name": "United States Minor Outlying Islands",
+            "slug": "united-states-minor-outlying-islands",
+            "code": "+1581",
+            "flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "5a071aa3-9a57-4e7c-b772-213908ee5abd",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.890Z",
+            "date_updated": "2023-10-20T01:51:23.890Z",
+            "is_active": true,
+            "name": "Uzbekistan",
+            "slug": "uzbekistan",
+            "code": "+998",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "5bee4182-63c5-437a-a475-f60f3a95d983",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.681Z",
+            "date_updated": "2023-10-20T01:51:23.681Z",
+            "is_active": true,
+            "name": "Cayman Islands",
+            "slug": "cayman-islands",
+            "code": "+1345",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_the_Cayman_Islands.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "5d6bed5a-6acd-4b9e-8064-85b2e1899fb6",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.878Z",
+            "date_updated": "2023-10-20T01:51:23.878Z",
+            "is_active": true,
+            "name": "Turkmenistan",
+            "slug": "turkmenistan",
+            "code": "+993",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Turkmenistan.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "5e92b011-c76a-49c3-914b-a1f8ec1fa11d",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.795Z",
+            "date_updated": "2023-10-20T01:51:23.795Z",
+            "is_active": true,
+            "name": "Montenegro",
+            "slug": "montenegro",
+            "code": "+382",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Montenegro.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "604903f0-cfbb-4fdc-8a59-3941c9757f8b",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.690Z",
+            "date_updated": "2023-10-20T01:51:23.690Z",
+            "is_active": true,
+            "name": "Comoros",
+            "slug": "comoros",
+            "code": "+269",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/9/94/Flag_of_the_Comoros.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "616204c2-f7d6-4d72-b00f-b03183033e52",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.814Z",
+            "date_updated": "2023-10-20T01:51:23.814Z",
+            "is_active": true,
+            "name": "Northern Mariana Islands",
+            "slug": "northern-mariana-islands",
+            "code": "+1 670",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Flag_of_the_Northern_Mariana_Islands.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "6290e428-2c31-4aaf-aa15-879a1b06bdd2",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.861Z",
+            "date_updated": "2023-10-20T01:51:23.861Z",
+            "is_active": true,
+            "name": "Suriname",
+            "slug": "suriname",
+            "code": "+597",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "6431cb9c-f335-41f1-9598-afe98984700a",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.837Z",
+            "date_updated": "2023-10-20T01:51:23.837Z",
+            "is_active": true,
+            "name": "Saint Pierre and Miquelon",
+            "slug": "saint-pierre-and-miquelon",
+            "code": "+508",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_Saint-Pierre_and_Miquelon.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "6bf75ea7-69e8-4c40-9310-9fee898ee3c9",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.661Z",
+            "date_updated": "2023-10-20T01:51:23.661Z",
+            "is_active": true,
+            "name": "Belize",
+            "slug": "belize",
+            "code": "+501",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Belize.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "6c3265cb-3eb1-404c-9f3e-d24ba0b80170",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.707Z",
+            "date_updated": "2023-10-20T01:51:23.707Z",
+            "is_active": true,
+            "name": "El Salvador",
+            "slug": "el-salvador",
+            "code": "+503",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "6cf58bcc-9103-46b5-9d7e-86fc35d0cd2d",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.660Z",
+            "date_updated": "2023-10-20T01:51:23.660Z",
+            "is_active": true,
+            "name": "Belgium",
+            "slug": "belgium",
+            "code": "+32",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "6dc37bc1-38c7-4f03-bceb-62116c250a4b",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.733Z",
+            "date_updated": "2023-10-20T01:51:23.733Z",
+            "is_active": true,
+            "name": "Guatemala",
+            "slug": "guatemala",
+            "code": "+502",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Guatemala.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "71f9756d-24fd-44d9-bb4c-ea5b93ed75b5",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.788Z",
+            "date_updated": "2023-10-20T01:51:23.788Z",
+            "is_active": true,
+            "name": "Mauritania",
+            "slug": "mauritania",
+            "code": "+222",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/4/43/Flag_of_Mauritania.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "773b8b16-f2e5-4830-946b-30c0ee771eb0",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.721Z",
+            "date_updated": "2023-10-20T01:51:23.721Z",
+            "is_active": true,
+            "name": "Gabon",
+            "slug": "gabon",
+            "code": "+241",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Gabon.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "77fa9e14-6e88-4fb8-a850-301f6f5822d8",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.711Z",
+            "date_updated": "2023-10-20T01:51:23.711Z",
+            "is_active": true,
+            "name": "Ethiopia",
+            "slug": "ethiopia",
+            "code": "+251",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_Ethiopia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "791d3c9f-f1b8-4608-b09d-3662142ed111",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.723Z",
+            "date_updated": "2023-10-20T01:51:23.723Z",
+            "is_active": true,
+            "name": "Georgia",
+            "slug": "georgia",
+            "code": "+995",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "79301fb0-5372-4b82-8dbc-52f3dc24acef",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.646Z",
+            "date_updated": "2023-10-20T01:51:23.646Z",
+            "is_active": true,
+            "name": "Antigua and Barbuda",
+            "slug": "antigua-and-barbuda",
+            "code": "+1268",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Antigua_and_Barbuda.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "79b7de2d-69b6-4f0d-9f73-8663ffe579e2",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.750Z",
+            "date_updated": "2023-10-20T01:51:23.750Z",
+            "is_active": true,
+            "name": "Iran",
+            "slug": "iran",
+            "code": "+98",
+            "flag": " https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "7a7e04e3-7f91-4838-a5c5-36f8f42cd292",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.801Z",
+            "date_updated": "2023-10-20T01:51:23.801Z",
+            "is_active": true,
+            "name": "Namibia",
+            "slug": "namibia",
+            "code": "+264",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Namibia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "7c55ddbd-60cd-40b4-a7ae-8d6a2bed8c38",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.896Z",
+            "date_updated": "2023-10-20T01:51:23.896Z",
+            "is_active": true,
+            "name": "Zambia",
+            "slug": "zambia",
+            "code": "+260",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "7e788813-e206-4f0a-87a8-636fcd386797",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.663Z",
+            "date_updated": "2023-10-20T01:51:23.663Z",
+            "is_active": true,
+            "name": "Bermuda",
+            "slug": "bermuda",
+            "code": "+1 441",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bermuda.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "7f50371d-1819-4f57-abd8-183ad805bd7a",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.821Z",
+            "date_updated": "2023-10-20T01:51:23.821Z",
+            "is_active": true,
+            "name": "Papua New Guinea",
+            "slug": "papua-new-guinea",
+            "code": "+675",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "80e7824d-c15d-4308-ad0d-c141a6112383",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.654Z",
+            "date_updated": "2023-10-20T01:51:23.654Z",
+            "is_active": true,
+            "name": "Bahamas",
+            "slug": "bahamas",
+            "code": "+1 242",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_the_Bahamas.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "822cdc2e-299d-4926-8ceb-0f4a7d58b779",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.763Z",
+            "date_updated": "2023-10-20T01:51:23.763Z",
+            "is_active": true,
+            "name": "Kenya",
+            "slug": "kenya",
+            "code": "+254",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "84fa6014-1e33-439e-87b3-0de7b84ea25d",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.839Z",
+            "date_updated": "2023-10-20T01:51:23.839Z",
+            "is_active": true,
+            "name": "Saint Vincent and the Grenadines",
+            "slug": "saint-vincent-and-the-grenadines",
+            "code": "+1 784",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "8512f391-bc13-4b0e-8f18-6624ae3ff5e4",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.869Z",
+            "date_updated": "2023-10-20T01:51:23.869Z",
+            "is_active": true,
+            "name": "Thailand",
+            "slug": "thailand",
+            "code": "+66",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "8622a9b9-44a0-4119-b03c-63b9bd7d4869",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.752Z",
+            "date_updated": "2023-10-20T01:51:23.752Z",
+            "is_active": true,
+            "name": "Ireland",
+            "slug": "ireland",
+            "code": "+353",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "88296221-c7e0-499c-9bf0-31e92cff4aa3",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.775Z",
+            "date_updated": "2023-10-20T01:51:23.775Z",
+            "is_active": true,
+            "name": "Lithuania",
+            "slug": "lithuania",
+            "code": "+370",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Lithuania.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "886621c0-37e8-4465-a036-22d6f817f423",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.641Z",
+            "date_updated": "2023-10-20T01:51:23.641Z",
+            "is_active": true,
+            "name": "Algeria",
+            "slug": "algeria",
+            "code": "+213",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "8aa7eb72-2087-4780-afc1-127e11400090",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.865Z",
+            "date_updated": "2023-10-20T01:51:23.865Z",
+            "is_active": true,
+            "name": "Syrian Arab Republic",
+            "slug": "syrian-arab-republic",
+            "code": "+963",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/5/53/Flag_of_Syria.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "8cad37d7-9bab-45d3-afb4-0cf296b91c24",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.854Z",
+            "date_updated": "2023-10-20T01:51:23.854Z",
+            "is_active": true,
+            "name": "Somalia",
+            "slug": "somalia",
+            "code": "+252",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Somalia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "9274c14f-8bf1-487e-8aba-a99a8ba649c9",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.875Z",
+            "date_updated": "2023-10-20T01:51:23.875Z",
+            "is_active": true,
+            "name": "Trinidad and Tobago",
+            "slug": "trinidad-and-tobago",
+            "code": "+1 868",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trinidad_and_Tobago.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "92b6b3c3-ceff-4d13-9619-08a595dd5a99",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.761Z",
+            "date_updated": "2023-10-20T01:51:23.761Z",
+            "is_active": true,
+            "name": "Jordan",
+            "slug": "jordan",
+            "code": "+962",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "92c39964-a43b-4d9b-9257-fbea697dfa75",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.688Z",
+            "date_updated": "2023-10-20T01:51:23.688Z",
+            "is_active": true,
+            "name": "Cocos (Keeling) Islands",
+            "slug": "cocos-keeling-islands",
+            "code": "+61",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Cocos_%28Keeling%29_Islands.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "92c95ae5-7d84-4532-bf96-85e7b9b0e759",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.655Z",
+            "date_updated": "2023-10-20T01:51:23.655Z",
+            "is_active": true,
+            "name": "Bahrain",
+            "slug": "bahrain",
+            "code": "+973",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Bahrain.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "94453cbc-f3da-4c95-9ba4-d31e5219f583",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.672Z",
+            "date_updated": "2023-10-20T01:51:23.672Z",
+            "is_active": true,
+            "name": "Brunei Darussalam",
+            "slug": "brunei-darussalam",
+            "code": "+673",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Brunei.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "96ff8678-8fce-4af7-8404-4c372a943ca9",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.892Z",
+            "date_updated": "2023-10-20T01:51:23.892Z",
+            "is_active": true,
+            "name": "Viet Nam",
+            "slug": "viet-nam",
+            "code": "+84",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "994a4a40-992e-43cd-b85c-39cb8d04bbe4",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.826Z",
+            "date_updated": "2023-10-20T01:51:23.826Z",
+            "is_active": true,
+            "name": "Pitcairn",
+            "slug": "pitcairn",
+            "code": "+870",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_the_Pitcairn_Islands.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "99d22b5b-9d43-42e6-9714-f3a08f58c5e5",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.715Z",
+            "date_updated": "2023-10-20T01:51:23.715Z",
+            "is_active": true,
+            "name": "Fiji",
+            "slug": "fiji",
+            "code": "+679",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Fiji.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "9a69e8e2-fdcc-4a6a-84dc-cd0b3223accf",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.701Z",
+            "date_updated": "2023-10-20T01:51:23.701Z",
+            "is_active": true,
+            "name": "Djibouti",
+            "slug": "djibouti",
+            "code": "+253",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_Djibouti.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "9cca63b0-fa39-4118-a960-94f53b5a2578",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.730Z",
+            "date_updated": "2023-10-20T01:51:23.730Z",
+            "is_active": true,
+            "name": "Grenada",
+            "slug": "grenada",
+            "code": "+1 473",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Grenada.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "9d35ccbe-49be-4287-8da5-803ba94192d6",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.719Z",
+            "date_updated": "2023-10-20T01:51:23.719Z",
+            "is_active": true,
+            "name": "French Polynesia",
+            "slug": "french-polynesia",
+            "code": "+689",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_French_Polynesia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "9f38a134-f5c0-472e-b880-915aeea754a3",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.863Z",
+            "date_updated": "2023-10-20T01:51:23.863Z",
+            "is_active": true,
+            "name": "Sweden",
+            "slug": "sweden",
+            "code": "+46",
+            "flag": "https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "9fbe7ff5-de36-4f17-8da5-843566757eeb",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.844Z",
+            "date_updated": "2023-10-20T01:51:23.844Z",
+            "is_active": true,
+            "name": "Senegal",
+            "slug": "senegal",
+            "code": "+221",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "a1049b20-f731-4af7-9aed-2474434d8ca0",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.789Z",
+            "date_updated": "2023-10-20T01:51:23.789Z",
+            "is_active": true,
+            "name": "Mauritius",
+            "slug": "mauritius",
+            "code": "+230",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Mauritius.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "a1d43867-5068-460a-9b90-362134ca0229",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.744Z",
+            "date_updated": "2023-10-20T01:51:23.744Z",
+            "is_active": true,
+            "name": "Hong Kong",
+            "slug": "hong-kong",
+            "code": "+852",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Flag_of_Hong_Kong.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "a35822dd-1be7-4a0d-abe5-43b9f70b8722",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.813Z",
+            "date_updated": "2023-10-20T01:51:23.813Z",
+            "is_active": true,
+            "name": "Norfolk Island",
+            "slug": "norfolk-island",
+            "code": "+672",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Norfolk_Island.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "a3769ab5-1b65-4699-92da-4072e99ed28a",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.825Z",
+            "date_updated": "2023-10-20T01:51:23.825Z",
+            "is_active": true,
+            "name": "Philippines",
+            "slug": "philippines",
+            "code": "+63",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "a38cbc03-a74d-40db-ab01-aa3631639918",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.787Z",
+            "date_updated": "2023-10-20T01:51:23.787Z",
+            "is_active": true,
+            "name": "Martinique",
+            "slug": "martinique",
+            "code": "+596",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/5/52/Flag_of_Martinique.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "a39cfbed-d6da-47f9-99b7-9af4a4e3c110",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.709Z",
+            "date_updated": "2023-10-20T01:51:23.709Z",
+            "is_active": true,
+            "name": "Eritrea",
+            "slug": "eritrea",
+            "code": "+291",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Eritrea.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "a46b9a79-f2ce-4860-945a-026940ab11b6",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.820Z",
+            "date_updated": "2023-10-20T01:51:23.820Z",
+            "is_active": true,
+            "name": "Panama",
+            "slug": "panama",
+            "code": "+507",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "a57a146a-e684-4362-a4b9-dab34bd32f11",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.871Z",
+            "date_updated": "2023-10-20T01:51:23.871Z",
+            "is_active": true,
+            "name": "Togo",
+            "slug": "togo",
+            "code": "+228",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Togo.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "a621b513-8393-492e-9a4e-19a10b8836c4",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.876Z",
+            "date_updated": "2023-10-20T01:51:23.876Z",
+            "is_active": true,
+            "name": "Tunisia",
+            "slug": "tunisia",
+            "code": "+216",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "a6342e05-893e-4599-b626-f3c3a05514f2",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.860Z",
+            "date_updated": "2023-10-20T01:51:23.860Z",
+            "is_active": true,
+            "name": "Sudan",
+            "slug": "sudan",
+            "code": "+249",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Sudan.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "a6459ad2-db7b-4bfb-9f3d-c626ec0cef26",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.650Z",
+            "date_updated": "2023-10-20T01:51:23.651Z",
+            "is_active": true,
+            "name": "Australia",
+            "slug": "australia",
+            "code": "+61",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "a6d3a059-56fe-4a4d-8e5d-df86211d832b",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.889Z",
+            "date_updated": "2023-10-20T01:51:23.889Z",
+            "is_active": true,
+            "name": "Uruguay",
+            "slug": "uruguay",
+            "code": "+598",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "a6e6cc77-2858-49e3-aa63-94bbf92df639",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.836Z",
+            "date_updated": "2023-10-20T01:51:23.836Z",
+            "is_active": true,
+            "name": "Saint Lucia",
+            "slug": "saint-lucia",
+            "code": "+1 758",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Saint_Lucia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "a78c24c2-145d-4987-b605-6500f2db0d67",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.895Z",
+            "date_updated": "2023-10-20T01:51:23.895Z",
+            "is_active": true,
+            "name": "Yemen",
+            "slug": "yemen",
+            "code": "+967",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Yemen.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "a7949751-9d7b-417c-bd54-0e71c55d3586",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.833Z",
+            "date_updated": "2023-10-20T01:51:23.833Z",
+            "is_active": true,
+            "name": "Rwanda",
+            "slug": "rwanda",
+            "code": "+250",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Rwanda.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "a7de1926-32b2-4bb6-9a96-1dc0c7a2a1bb",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.754Z",
+            "date_updated": "2023-10-20T01:51:23.754Z",
+            "is_active": true,
+            "name": "Isle of Man",
+            "slug": "isle-of-man",
+            "code": "+44",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_the_Isle_of_Man.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "a7f80503-b319-4cb5-843d-421d477d41bc",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.732Z",
+            "date_updated": "2023-10-20T01:51:23.732Z",
+            "is_active": true,
+            "name": "Guam",
+            "slug": "guam",
+            "code": "+1 671",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/0/07/Flag_of_Guam.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "aa21edbb-d6a9-4b90-a81c-2b7c1fe4d6d1",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.669Z",
+            "date_updated": "2023-10-20T01:51:23.669Z",
+            "is_active": true,
+            "name": "Brazil",
+            "slug": "brazil",
+            "code": "+55",
+            "flag": "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "aa30f126-9ae1-4d12-9a34-13082e075d6e",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.846Z",
+            "date_updated": "2023-10-20T01:51:23.846Z",
+            "is_active": true,
+            "name": "Serbia",
+            "slug": "serbia",
+            "code": "+381",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "aaaf59e2-48bb-4bb3-bd9a-73deb07d0ee3",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.762Z",
+            "date_updated": "2023-10-20T01:51:23.762Z",
+            "is_active": true,
+            "name": "Kazakhstan",
+            "slug": "kazakhstan",
+            "code": "+7",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kazakhstan.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "ad3578bd-ec21-44ac-8553-fc35bc83f8b0",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.811Z",
+            "date_updated": "2023-10-20T01:51:23.811Z",
+            "is_active": true,
+            "name": "Niue",
+            "slug": "niue",
+            "code": "+683",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Niue.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "ad4f8631-2238-4b20-8a27-003005d63fe4",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.664Z",
+            "date_updated": "2023-10-20T01:51:23.664Z",
+            "is_active": true,
+            "name": "Bhutan",
+            "slug": "bhutan",
+            "code": "+975",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/9/91/Flag_of_Bhutan.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "adf504aa-7990-4d22-8bc4-592df567bc51",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.851Z",
+            "date_updated": "2023-10-20T01:51:23.851Z",
+            "is_active": true,
+            "name": "Slovenia",
+            "slug": "slovenia",
+            "code": "+386",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "b172cc20-e18b-4488-a659-a05d8bdd96da",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.816Z",
+            "date_updated": "2023-10-20T01:51:23.816Z",
+            "is_active": true,
+            "name": "Oman",
+            "slug": "oman",
+            "code": "+968",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Oman.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "b321598f-f020-4e1e-b3a8-ef4956df7bc5",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.856Z",
+            "date_updated": "2023-10-20T01:51:23.856Z",
+            "is_active": true,
+            "name": "South Georgia and the South Sandwich Islands",
+            "slug": "south-georgia-and-the-south-sandwich-islands",
+            "code": "+500",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_South_Georgia_and_the_South_Sandwich_Islands.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "b5c58059-8282-4981-bee3-55590088aaef",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.793Z",
+            "date_updated": "2023-10-20T01:51:23.793Z",
+            "is_active": true,
+            "name": "Monaco",
+            "slug": "monaco",
+            "code": "+377",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Flag_of_Monaco.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "ba28443f-66ef-42bb-9d18-0d7d93fe0b3f",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.656Z",
+            "date_updated": "2023-10-20T01:51:23.656Z",
+            "is_active": true,
+            "name": "Bangladesh",
+            "slug": "bangladesh",
+            "code": "+880",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Bangladesh.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "ba42d38b-96f1-4ae1-a9ac-5f3441378403",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.884Z",
+            "date_updated": "2023-10-20T01:51:23.884Z",
+            "is_active": true,
+            "name": "United Arab Emirates",
+            "slug": "united-arab-emirates",
+            "code": "+971",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "bba10647-0772-49f4-9235-1fa42e504865",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.759Z",
+            "date_updated": "2023-10-20T01:51:23.759Z",
+            "is_active": true,
+            "name": "Japan",
+            "slug": "japan",
+            "code": "+81",
+            "flag": "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "bec39474-24b7-4a0c-aaa0-05310d1d55a7",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.760Z",
+            "date_updated": "2023-10-20T01:51:23.760Z",
+            "is_active": true,
+            "name": "Jersey",
+            "slug": "jersey",
+            "code": "+44",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Flag_of_Jersey.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "bee1944e-36b1-41ff-af34-5827a3d70765",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.659Z",
+            "date_updated": "2023-10-20T01:51:23.659Z",
+            "is_active": true,
+            "name": "Belarus",
+            "slug": "belarus",
+            "code": "+375",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Belarus.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "bf67e055-aa44-45c1-be88-0e7e3a4658ec",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.643Z",
+            "date_updated": "2023-10-20T01:51:23.643Z",
+            "is_active": true,
+            "name": "Andorra",
+            "slug": "andorra",
+            "code": "+376",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "c0b4ebc1-f572-494f-8d60-03f98f87cb36",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.682Z",
+            "date_updated": "2023-10-20T01:51:23.682Z",
+            "is_active": true,
+            "name": "Central African Republic",
+            "slug": "central-african-republic",
+            "code": "+236",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Central_African_Republic.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "c24a2096-51c3-446c-9d63-696c827ca32c",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.665Z",
+            "date_updated": "2023-10-20T01:51:23.665Z",
+            "is_active": true,
+            "name": "Bosnia and Herzegovina",
+            "slug": "bosnia-and-herzegovina",
+            "code": "+387",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "c473bb70-717e-483b-b432-eb1c28e5cdda",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.684Z",
+            "date_updated": "2023-10-20T01:51:23.684Z",
+            "is_active": true,
+            "name": "Chile",
+            "slug": "chile",
+            "code": "+56",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "c47d0fa9-6c45-4431-b051-67655deee56a",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.862Z",
+            "date_updated": "2023-10-20T01:51:23.862Z",
+            "is_active": true,
+            "name": "Swaziland",
+            "slug": "swaziland",
+            "code": "+268",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Flag_of_Swaziland.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "c4eee564-9276-4105-83fd-15827cb43191",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.771Z",
+            "date_updated": "2023-10-20T01:51:23.771Z",
+            "is_active": true,
+            "name": "Lesotho",
+            "slug": "lesotho",
+            "code": "+266",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Lesotho.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "c4ff9a3b-e250-48d6-b374-9a7d61946cdd",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.697Z",
+            "date_updated": "2023-10-20T01:51:23.697Z",
+            "is_active": true,
+            "name": "Cyprus",
+            "slug": "cyprus",
+            "code": "+357",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Cyprus.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "c51b3b4e-4af5-4941-aafd-98fdef19cc7b",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.653Z",
+            "date_updated": "2023-10-20T01:51:23.653Z",
+            "is_active": true,
+            "name": "Azerbaijan",
+            "slug": "azerbaijan",
+            "code": "+994",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "c5216455-5e93-4b3c-a3ef-51af48ac5c43",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.858Z",
+            "date_updated": "2023-10-20T01:51:23.858Z",
+            "is_active": true,
+            "name": "Sri Lanka",
+            "slug": "sri-lanka",
+            "code": "+94",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Sri_Lanka.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "c553ca86-5a57-4664-bdef-8cfef378719d",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.780Z",
+            "date_updated": "2023-10-20T01:51:23.780Z",
+            "is_active": true,
+            "name": "Malawi",
+            "slug": "malawi",
+            "code": "+265",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Malawi.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "c5e53ccf-6e4d-4c4f-a8ad-9e3e12cfaef8",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.777Z",
+            "date_updated": "2023-10-20T01:51:23.777Z",
+            "is_active": true,
+            "name": "Macao",
+            "slug": "macao",
+            "code": "+853",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Macau.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "c757c045-c089-4add-a90c-f14d1a558f1a",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.807Z",
+            "date_updated": "2023-10-20T01:51:23.807Z",
+            "is_active": true,
+            "name": "New Zealand",
+            "slug": "new-zealand",
+            "code": "+64",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "ca65e4f1-1187-4141-8bc5-cbf9f789633b",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.640Z",
+            "date_updated": "2023-10-20T01:51:23.640Z",
+            "is_active": true,
+            "name": "Albania",
+            "slug": "albania",
+            "code": "+355",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "cac6135b-2a92-4a56-9f3c-a9318717319b",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.784Z",
+            "date_updated": "2023-10-20T01:51:23.784Z",
+            "is_active": true,
+            "name": "Malta",
+            "slug": "malta",
+            "code": "+356",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "cb2b1ce4-6b27-4426-8cee-eaf41e1d28f4",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.782Z",
+            "date_updated": "2023-10-20T01:51:23.782Z",
+            "is_active": true,
+            "name": "Maldives",
+            "slug": "maldives",
+            "code": "+960",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Maldives.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "ce265de1-0cd8-4119-a4be-5eab4bcd99ee",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.797Z",
+            "date_updated": "2023-10-20T01:51:23.797Z",
+            "is_active": true,
+            "name": "Morocco",
+            "slug": "morocco",
+            "code": "+212",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "ce8563ca-b799-484b-8093-c5fbbfacc854",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.849Z",
+            "date_updated": "2023-10-20T01:51:23.849Z",
+            "is_active": true,
+            "name": "Singapore",
+            "slug": "singapore",
+            "code": "+65",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "cf1c7630-ce3c-46f5-872d-b56c1621a47b",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.718Z",
+            "date_updated": "2023-10-20T01:51:23.718Z",
+            "is_active": true,
+            "name": "French Guiana",
+            "slug": "french-guiana",
+            "code": "+594",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_French_Guiana.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "cf54b947-ef6c-489b-ba08-062f9bc196b1",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.683Z",
+            "date_updated": "2023-10-20T01:51:23.683Z",
+            "is_active": true,
+            "name": "Chad",
+            "slug": "chad",
+            "code": "+235",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Chad.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "d115b128-d460-42f6-a436-93949766220d",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.737Z",
+            "date_updated": "2023-10-20T01:51:23.737Z",
+            "is_active": true,
+            "name": "Guinea-Bissau",
+            "slug": "guinea-bissau",
+            "code": "+245",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Guinea-Bissau.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "d1fd2944-c2c8-46fd-b8f6-d6f64e1c3e08",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.710Z",
+            "date_updated": "2023-10-20T01:51:23.710Z",
+            "is_active": true,
+            "name": "Estonia",
+            "slug": "estonia",
+            "code": "+372",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_Estonia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "d2d670f1-e733-4c6a-9ed9-6e64d4a57fb0",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.728Z",
+            "date_updated": "2023-10-20T01:51:23.728Z",
+            "is_active": true,
+            "name": "Greece",
+            "slug": "greece",
+            "code": "+30",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "d333a13c-6209-4534-93a1-517ee1296688",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.828Z",
+            "date_updated": "2023-10-20T01:51:23.828Z",
+            "is_active": true,
+            "name": "Portugal",
+            "slug": "portugal",
+            "code": "+351",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "d43a52cd-ca18-40db-88b7-b783a51dfd73",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.831Z",
+            "date_updated": "2023-10-20T01:51:23.831Z",
+            "is_active": true,
+            "name": "Romania",
+            "slug": "romania",
+            "code": "+40",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "d53b04ec-9a2b-4da2-aa4c-85ab1f17704a",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.740Z",
+            "date_updated": "2023-10-20T01:51:23.740Z",
+            "is_active": true,
+            "name": "Haiti",
+            "slug": "haiti",
+            "code": "+509",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Haiti.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "d57b66c0-bf3f-451e-a1e3-3f727ea1c973",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.713Z",
+            "date_updated": "2023-10-20T01:51:23.713Z",
+            "is_active": true,
+            "name": "Faroe Islands",
+            "slug": "faroe-islands",
+            "code": "+298",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_the_Faroe_Islands.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "d65745b3-b530-486f-bafb-9b8c406b3a11",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.668Z",
+            "date_updated": "2023-10-20T01:51:23.668Z",
+            "is_active": true,
+            "name": "Bouvet Island",
+            "slug": "bouvet-island",
+            "code": "+55",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "d95ac3bd-7ebe-47f2-876a-2234e2545726",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.698Z",
+            "date_updated": "2023-10-20T01:51:23.698Z",
+            "is_active": true,
+            "name": "Czech Republic",
+            "slug": "czech-republic",
+            "code": "+420",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "d9d7c7a0-fd26-4e9d-a98d-c20a6be52a07",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.678Z",
+            "date_updated": "2023-10-20T01:51:23.679Z",
+            "is_active": true,
+            "name": "Canada",
+            "slug": "canada",
+            "code": "+1",
+            "flag": "https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "db58f15c-efb3-454a-b24a-9c19eb2d3d04",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.857Z",
+            "date_updated": "2023-10-20T01:51:23.857Z",
+            "is_active": true,
+            "name": "Spain",
+            "slug": "spain",
+            "code": "+34",
+            "flag": "https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "dbee9d63-75de-468b-b8b0-e24699ff9b49",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.644Z",
+            "date_updated": "2023-10-20T01:51:23.644Z",
+            "is_active": true,
+            "name": "Angola",
+            "slug": "angola",
+            "code": "+244",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "dc320bf2-c93e-4040-b533-e13852277502",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.803Z",
+            "date_updated": "2023-10-20T01:51:23.803Z",
+            "is_active": true,
+            "name": "Nepal",
+            "slug": "nepal",
+            "code": "+977",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "dc5dd0b1-9e27-4ce2-95e5-e1396c20ce37",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.736Z",
+            "date_updated": "2023-10-20T01:51:23.736Z",
+            "is_active": true,
+            "name": "Guinea",
+            "slug": "guinea",
+            "code": "+224",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_Guinea.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "e1c78971-a9ab-4189-84e3-414dd49fca5d",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.742Z",
+            "date_updated": "2023-10-20T01:51:23.742Z",
+            "is_active": true,
+            "name": "Holy See (Vatican City State)",
+            "slug": "holy-see-vatican-city-state",
+            "code": "+379",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Vatican_City.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "e557ea20-43ff-497d-8a59-66102279adc8",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.725Z",
+            "date_updated": "2023-10-20T01:51:23.725Z",
+            "is_active": true,
+            "name": "Ghana",
+            "slug": "ghana",
+            "code": "+233",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "e63db856-b032-4d8f-aea7-8a116a158141",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.885Z",
+            "date_updated": "2023-10-20T01:51:23.885Z",
+            "is_active": true,
+            "name": "United Kingdom",
+            "slug": "united-kingdom",
+            "code": "+44",
+            "flag": "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "eb9497d9-4629-4827-9c15-923e3d21cf44",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.800Z",
+            "date_updated": "2023-10-20T01:51:23.800Z",
+            "is_active": true,
+            "name": "Myanmar",
+            "slug": "myanmar",
+            "code": "+95",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Flag_of_Myanmar.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "ec2cfa9f-cb95-4a36-a029-d6cce12edab2",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.686Z",
+            "date_updated": "2023-10-20T01:51:23.686Z",
+            "is_active": true,
+            "name": "Christmas Island",
+            "slug": "christmas-island",
+            "code": "+61",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_Christmas_Island.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "ec6a50ce-bd10-4d1b-bfdc-e2cffab572bf",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.798Z",
+            "date_updated": "2023-10-20T01:51:23.798Z",
+            "is_active": true,
+            "name": "Mozambique",
+            "slug": "mozambique",
+            "code": "+258",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "ec9510f2-cd76-45cb-b0b5-10f7d82fa1a6",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.689Z",
+            "date_updated": "2023-10-20T01:51:23.689Z",
+            "is_active": true,
+            "name": "Colombia",
+            "slug": "colombia",
+            "code": "+57",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "edebfc4e-82da-42d6-b63d-7074564730ae",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.790Z",
+            "date_updated": "2023-10-20T01:51:23.790Z",
+            "is_active": true,
+            "name": "Mayotte",
+            "slug": "mayotte",
+            "code": "+262",
+            "flag": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "f0499018-1804-42e6-a2ff-cab5a1a1771a",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.647Z",
+            "date_updated": "2023-10-20T01:51:23.647Z",
+            "is_active": true,
+            "name": "Argentina",
+            "slug": "argentina",
+            "code": "+54",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "f3cdbbd1-514e-48ef-929c-f6700bdde93c",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.796Z",
+            "date_updated": "2023-10-20T01:51:23.796Z",
+            "is_active": true,
+            "name": "Montserrat",
+            "slug": "montserrat",
+            "code": "+1664",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Montserrat.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "f4015f44-5001-4be8-a259-a3e00f2c29cf",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.783Z",
+            "date_updated": "2023-10-20T01:51:23.783Z",
+            "is_active": true,
+            "name": "Mali",
+            "slug": "mali",
+            "code": "+223",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Mali.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "f660ade0-5d29-4945-807a-c3646ca3c9c8",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.823Z",
+            "date_updated": "2023-10-20T01:51:23.823Z",
+            "is_active": true,
+            "name": "Peru",
+            "slug": "peru",
+            "code": "+51",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "f7f5a921-a2ea-4464-aa62-262fdd57e6cd",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.722Z",
+            "date_updated": "2023-10-20T01:51:23.722Z",
+            "is_active": true,
+            "name": "Gambia",
+            "slug": "gambia",
+            "code": "+220",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_The_Gambia.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "f8a6db77-7e54-4a99-aced-2110f27e6d03",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.768Z",
+            "date_updated": "2023-10-20T01:51:23.768Z",
+            "is_active": true,
+            "name": "Lao People's Democratic Republic",
+            "slug": "lao-peoples-democratic-republic",
+            "code": "+856",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Laos.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "fa42f2f3-0f5f-4daa-871c-feaede02d265",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.764Z",
+            "date_updated": "2023-10-20T01:51:23.764Z",
+            "is_active": true,
+            "name": "Kiribati",
+            "slug": "kiribati",
+            "code": "+686",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kiribati.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "fb1e591c-c836-4242-8bb8-e23729fba051",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.757Z",
+            "date_updated": "2023-10-20T01:51:23.757Z",
+            "is_active": true,
+            "name": "Jamaica",
+            "slug": "jamaica",
+            "code": "+1 876",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "fc8b4e1c-fa00-4a1d-8ba4-9725b8382cfa",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.835Z",
+            "date_updated": "2023-10-20T01:51:23.835Z",
+            "is_active": true,
+            "name": "Saint Kitts and Nevis",
+            "slug": "saint-kitts-and-nevis",
+            "code": "+1 869",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "fd918972-f43d-4ad7-9435-9a7828c9022d",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.840Z",
+            "date_updated": "2023-10-20T01:51:23.840Z",
+            "is_active": true,
+            "name": "Samoa",
+            "slug": "samoa",
+            "code": "+685",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Samoa.svg"
+        }
+    },
+    {
+        "model": "main.country",
+        "pk": "ff277cc8-a196-4443-935e-79169da63373",
+        "fields": {
+            "date_added": "2023-10-20T01:51:23.680Z",
+            "date_updated": "2023-10-20T01:51:23.680Z",
+            "is_active": true,
+            "name": "Cape Verde",
+            "slug": "cape-verde",
+            "code": "+238",
+            "flag": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Cape_Verde.svg"
+        }
+    },
+    {
+        "model": "main.state",
+        "pk": "4ceb0e4b-9003-413c-8685-5fdff31d0979",
+        "fields": {
+            "date_added": "2023-10-20T01:52:18.878Z",
+            "date_updated": "2023-10-20T01:52:18.878Z",
+            "is_active": true,
+            "country": null,
+            "name": "Others",
+            "slug": "others"
+        }
+    },
+    {
+        "model": "main.state",
+        "pk": "9846b258-8067-4cc4-9892-73804c3d0466",
+        "fields": {
+            "date_added": "2023-10-20T01:52:18.877Z",
+            "date_updated": "2023-10-20T01:52:18.877Z",
+            "is_active": true,
+            "country": null,
+            "name": "Kerala",
+            "slug": "kerala"
+        }
+    },
+    {
+        "model": "main.district",
+        "pk": "0fd8b03a-6003-410b-a807-a5a47649bed3",
+        "fields": {
+            "date_added": "2023-10-20T01:52:34.447Z",
+            "date_updated": "2023-10-20T01:52:34.447Z",
+            "is_active": true,
+            "state": "9846b258-8067-4cc4-9892-73804c3d0466",
+            "name": "Kottayam",
+            "slug": "kottayam"
+        }
+    },
+    {
+        "model": "main.district",
+        "pk": "10b5b1b5-b983-4212-87d2-3e8289985e6d",
+        "fields": {
+            "date_added": "2023-10-20T01:52:34.452Z",
+            "date_updated": "2023-10-20T01:52:34.452Z",
+            "is_active": true,
+            "state": "9846b258-8067-4cc4-9892-73804c3d0466",
+            "name": "Kozhikode South",
+            "slug": "kozhikode-south"
+        }
+    },
+    {
+        "model": "main.district",
+        "pk": "160b2ea2-890a-40c7-b289-60f247aa32d5",
+        "fields": {
+            "date_added": "2023-10-20T01:52:34.444Z",
+            "date_updated": "2023-10-20T01:52:34.444Z",
+            "is_active": true,
+            "state": "9846b258-8067-4cc4-9892-73804c3d0466",
+            "name": "Kasargod",
+            "slug": "kasargod"
+        }
+    },
+    {
+        "model": "main.district",
+        "pk": "2c1fe887-3bb7-4f96-bbdc-7cbc1416211e",
+        "fields": {
+            "date_added": "2023-10-20T01:52:34.449Z",
+            "date_updated": "2023-10-20T01:52:34.449Z",
+            "is_active": true,
+            "state": "9846b258-8067-4cc4-9892-73804c3d0466",
+            "name": "Kozhikode North",
+            "slug": "kozhikode-north"
+        }
+    },
+    {
+        "model": "main.district",
+        "pk": "2f0ce711-b538-4b1e-a8b9-b647c2f11328",
+        "fields": {
+            "date_added": "2023-10-20T01:52:34.458Z",
+            "date_updated": "2023-10-20T01:52:34.458Z",
+            "is_active": true,
+            "state": "4ceb0e4b-9003-413c-8685-5fdff31d0979",
+            "name": "Others",
+            "slug": "others"
+        }
+    },
+    {
+        "model": "main.district",
+        "pk": "36e338d7-972f-4ebd-acd9-c296953a7fa1",
+        "fields": {
+            "date_added": "2023-10-20T01:52:34.437Z",
+            "date_updated": "2023-10-20T01:52:34.437Z",
+            "is_active": true,
+            "state": "9846b258-8067-4cc4-9892-73804c3d0466",
+            "name": "Alappuzha",
+            "slug": "alappuzha"
+        }
+    },
+    {
+        "model": "main.district",
+        "pk": "70213392-7861-4311-b15f-2f2891c48870",
+        "fields": {
+            "date_added": "2023-10-20T01:52:34.460Z",
+            "date_updated": "2023-10-20T01:52:34.460Z",
+            "is_active": true,
+            "state": "9846b258-8067-4cc4-9892-73804c3d0466",
+            "name": "Palakkad",
+            "slug": "palakkad"
+        }
+    },
+    {
+        "model": "main.district",
+        "pk": "7402529a-ea9a-4a8b-9334-34002b7c3aac",
+        "fields": {
+            "date_added": "2023-10-20T01:52:34.465Z",
+            "date_updated": "2023-10-20T01:52:34.465Z",
+            "is_active": true,
+            "state": "9846b258-8067-4cc4-9892-73804c3d0466",
+            "name": "Thiruvananthapuram",
+            "slug": "thiruvananthapuram"
+        }
+    },
+    {
+        "model": "main.district",
+        "pk": "769428bc-0369-4b97-9f9e-65208a7124e2",
+        "fields": {
+            "date_added": "2023-10-20T01:52:34.454Z",
+            "date_updated": "2023-10-20T01:52:34.454Z",
+            "is_active": true,
+            "state": "9846b258-8067-4cc4-9892-73804c3d0466",
+            "name": "Malappuram East",
+            "slug": "malappuram-east"
+        }
+    },
+    {
+        "model": "main.district",
+        "pk": "858e84ac-b777-4920-8fdd-88eb1fd217c6",
+        "fields": {
+            "date_added": "2023-10-20T01:52:34.445Z",
+            "date_updated": "2023-10-20T01:52:34.445Z",
+            "is_active": true,
+            "state": "9846b258-8067-4cc4-9892-73804c3d0466",
+            "name": "Kollam",
+            "slug": "kollam"
+        }
+    },
+    {
+        "model": "main.district",
+        "pk": "8a8271ea-07ff-4a0c-818e-fee466184cb9",
+        "fields": {
+            "date_added": "2023-10-20T01:52:34.456Z",
+            "date_updated": "2023-10-20T01:52:34.456Z",
+            "is_active": true,
+            "state": "9846b258-8067-4cc4-9892-73804c3d0466",
+            "name": "Malappuram West",
+            "slug": "malappuram-west"
+        }
+    },
+    {
+        "model": "main.district",
+        "pk": "8be0ed70-eaab-4c9b-997f-4b13926fa6f6",
+        "fields": {
+            "date_added": "2023-10-20T01:52:34.442Z",
+            "date_updated": "2023-10-20T01:52:34.442Z",
+            "is_active": true,
+            "state": "9846b258-8067-4cc4-9892-73804c3d0466",
+            "name": "Kannur",
+            "slug": "kannur"
+        }
+    },
+    {
+        "model": "main.district",
+        "pk": "9cd0abd5-3637-40e1-b3f9-37312e0fdc5d",
+        "fields": {
+            "date_added": "2023-10-20T01:52:34.441Z",
+            "date_updated": "2023-10-20T01:52:34.441Z",
+            "is_active": true,
+            "state": "9846b258-8067-4cc4-9892-73804c3d0466",
+            "name": "Idukki",
+            "slug": "idukki"
+        }
+    },
+    {
+        "model": "main.district",
+        "pk": "a49f2de0-174b-43c6-bfb8-f5fae1d7a776",
+        "fields": {
+            "date_added": "2023-10-20T01:52:34.467Z",
+            "date_updated": "2023-10-20T01:52:34.467Z",
+            "is_active": true,
+            "state": "9846b258-8067-4cc4-9892-73804c3d0466",
+            "name": "Thrissur",
+            "slug": "thrissur"
+        }
+    },
+    {
+        "model": "main.district",
+        "pk": "a62aa3f3-0ca4-4ede-80f7-95b477cd50e6",
+        "fields": {
+            "date_added": "2023-10-20T01:52:34.462Z",
+            "date_updated": "2023-10-20T01:52:34.462Z",
+            "is_active": true,
+            "state": "9846b258-8067-4cc4-9892-73804c3d0466",
+            "name": "Pathanamthitta",
+            "slug": "pathanamthitta"
+        }
+    },
+    {
+        "model": "main.district",
+        "pk": "b02b740e-b3fc-4fa0-9119-3237c62069b9",
+        "fields": {
+            "date_added": "2023-10-20T01:52:34.469Z",
+            "date_updated": "2023-10-20T01:52:34.469Z",
+            "is_active": true,
+            "state": "9846b258-8067-4cc4-9892-73804c3d0466",
+            "name": "Wayanad",
+            "slug": "wayanad"
+        }
+    },
+    {
+        "model": "main.district",
+        "pk": "eac35d92-744e-4df9-88dc-085f963abc04",
+        "fields": {
+            "date_added": "2023-10-20T01:52:34.439Z",
+            "date_updated": "2023-10-20T01:52:34.439Z",
+            "is_active": true,
+            "state": "9846b258-8067-4cc4-9892-73804c3d0466",
+            "name": "Ernakulam",
+            "slug": "ernakulam"
+        }
+    }
+]

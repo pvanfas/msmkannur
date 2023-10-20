@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" href="{% static 'app/images/favicon.png' %}" />
+    <link rel="stylesheet" href="{% static 'app/vendors/feather/feather.css' %}">
+    <link rel="stylesheet" href="{% static 'app/vendors/ti-icons/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'app/vendors/css/vendor.bundle.base.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/vertical-layout-light/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="{% static 'app/css/vertical-layout-light/custom.css' %}">
+    {% block stylesheet %}{% endblock %}
+</head>
+
+<body>
+
+    <div class="container-scroller">
+
+        <div class="container-fluid page-body-wrapper full-page-wrapper">
+            <div class="content-wrapper auth px-0">
+
+                <div class="row w-100 mx-0">
+                    {% block content %}
+
+                    {% endblock %}
+                </div>
+
+                <footer>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <p class="mb-0 mt-4">© {% now 'Y' %} MSM Kannur. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+            <!-- content-wrapper ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+
+
+    <script src="{% static 'app/vendors/js/vendor.bundle.base.js' %}"></script>
+    {% block plugins %}{% endblock %}
+    <script src="{% static 'app/js/off-canvas.js' %}"></script>
+    <script src="{% static 'app/js/hoverable-collapse.js' %}"></script>
+    <script src="{% static 'app/js/template.js' %}"></script>
+    <script src="{% static 'app/js/settings.js' %}"></script>
+    <script src="{% static 'app/js/todolist.js' %}"></script>
+    <script src="{% static 'app/js/sweetalert2.all.min.js' %}"></script>
+    <script src="{% static 'app/js/script.js' %}"></script>
+    {% block javascript %}{% endblock %}
+</body>
+
+</html>

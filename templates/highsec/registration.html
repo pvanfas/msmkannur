@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% block title %}HIGHSEC 2023 | MSM Kannur{% endblock %}
+{% load i18n static %}{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="col-xl-4 col-lg-6 col-md-8 col-11 mx-auto">
+    <div class="auth-form-light py-5 px-4 px-sm-5">
+
+        <div class="brand-logo text-center">
+            <img src="{% static 'app/images/logo-dark.png' %}" alt="logo">
+        </div>
+
+        <h4 class="text-center">HIGHSEC 2023 REGISTRATION</h4>
+        <form class="pt-3" method="post" action="">
+            {% csrf_token %}
+            {{ form|crispy }}
+
+            <div class="mt-3">
+                <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">
+                    {% trans 'Submit' %}
+                </button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+{% block stylesheet %}
+<style>
+    .content-wrapper {
+        background-image: url({% static 'app/images/banner.png' %});
+        padding: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .auth .auth-form-light {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-control,
+    select.form-control {
+        border: 1px dashed #80bdff;
+        outline: 0;
+        border-radius: 10px !important;
+        color: #000;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .iti {
+        width: 100%;
+    }
+
+    .iti__selected-flag {
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+</style>
+{% endblock %}
+
+{% block javascript %}
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+<script>
+    // Define the input fields and country code inputs
+    const phoneInput = document.querySelector("#id_phone_number");
+    const whatsappInput = document.querySelector("#id_whatsapp_number");
+    const selectedPhoneCountryCodeInput = document.querySelector("#id_selected_phone_country_code");
+    const selectedWhatsappCountryCodeInput = document.querySelector("#id_selected_whatsapp_country_code");
+
+    // Function to initialize the international phone input
+    const initIntlTelInput = (input, countryCodeInput) => {
+        const iti = window.intlTelInput(input, {
+            separateDialCode: true,
+            preferredCountries: ["in", "ae", "qa", "sa", "bh", "kw"],
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+        });
+
+        // Function to handle changes in the selected country
+        const handleChange = () => {
+            const countryCode = iti.getSelectedCountryData().dialCode;
+            countryCodeInput.value = countryCode;
+        };
+
+        // Add an event listener for country change
+        input.addEventListener("countrychange", handleChange);
+
+        // Initial update of the country code
+        handleChange();
+    };
+
+    // Initialize the international phone inputs
+    initIntlTelInput(phoneInput, selectedPhoneCountryCodeInput);
+    initIntlTelInput(whatsappInput, selectedWhatsappCountryCodeInput);
+
+</script>
+
+<script>
+    $(document).ready(function () {
+        // Cache frequently used elements
+        var $idZone = $("#id_zone");
+        var $idUnit = $("#id_unit");
+        var $idCurrentCourse = $("#id_education_level")
+        var $divIdUnit = $("#div_id_unit");
+        var $divCurrentCourse = $("#div_id_current_course")
+
+        // Initial setup
+        $divCurrentCourse.hide();
+        $idUnit.empty().append('<option value="" selected="selected">--- select zone first ---</option>');
+
+        $idCurrentCourse.change(function () {
+            var idCurrentCourse = $idCurrentCourse.val();
+            var courseLabel = $idCurrentCourse.find("option:selected").text().toLowerCase();
+            if (courseLabel === 'other') {
+                $divCurrentCourse.show();
+            } else {
+                $divCurrentCourse.hide();
+            }
+        });
+        // Handle zone change
+        $idZone.change(function () {
+            var idZone = $idZone.val();
+            var zoneLabel = $idZone.find("option:selected").text().toLowerCase();
+            if (zoneLabel === 'other') {
+                $divIdUnit.hide();
+            } else {
+                $divIdUnit.show();
+            }
+
+            $idUnit.empty().append('<option value="" selected="selected">--- Loading ---</option>');
+
+            // Fetch units via AJAX
+            $.ajax({
+                url: "{% url 'highsec:get_units' %}",
+                data: { 'id_zone': idZone },
+                dataType: 'json',
+                success: function (data) {
+                    $idUnit.empty().append('<option value="" selected="selected">--- Select Unit ---</option>');
+                    $.each(data, function (index, value) {
+                        $idUnit.append('<option value="' + value.id + '">' + value.name + '</option>');
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+{% endblock %}

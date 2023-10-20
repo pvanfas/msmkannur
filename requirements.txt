@@ -1,0 +1,17 @@
+Django
+django-admin-interface
+django-crispy-forms
+django-extensions
+django-import-export
+django-registration-redux
+django-rosetta
+django-tables2
+django-tinymce
+django-versatileimagefield
+django-wkhtmltopdf
+psycopg2-binary
+python-decouple
+django-filter
+pdfkit
+crispy-bootstrap4
+psycopg2-binary
